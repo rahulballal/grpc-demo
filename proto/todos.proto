@@ -5,9 +5,9 @@ package todos;
 service TodoService {
   rpc List (Empty) returns (TodoList);
   rpc Add (Todo) returns (Todo);
-  rpc Remove (TodoId) returns (Todo);
-  rpc Edit (TodoId, Todo) returns (Todo);
-  rpc Get (TodoId) returns (Todo)
+  rpc Remove (TodoId) returns (Empty);
+  rpc Edit (Todo) returns (Todo);
+  rpc Get (TodoId) returns (Todo);
 }
 
 message Todo {
